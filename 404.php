@@ -1,0 +1,1 @@
+<?php http_response_code(404);$title='الصفحة غير موجودة | ALAN';require __DIR__.'/includes/header.php';?><div class="page empty"><p class="eyebrow">404</p><h1>هذه الصفحة غير موجودة</h1><p>ربما انتقلت القطعة إلى مكان آخر، لكن مجموعتنا بانتظاركِ.</p><a class="btn" href="<?=base()?>">العودة للرئيسية</a></div><?php require __DIR__.'/includes/footer.php';?>

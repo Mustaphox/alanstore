@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/../includes/functions.php';header('Content-Type: application/json; charset=utf-8');echo json_encode(db()->query('SELECT * FROM hero WHERE is_active=1 ORDER BY id DESC LIMIT 1')->fetch()?:[]);

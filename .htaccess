@@ -1,0 +1,20 @@
+# Prevent directory listing
+Options -Indexes
+
+# Protect sensitive files (config.php, SQL dumps, hidden files)
+<FilesMatch "^(.*\.sql|config\.php|\.env|\.git)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Force UTF-8 encoding
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Hide .php extension
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+    RewriteRule ^(.*)$ $1.php [L]
+</IfModule>
