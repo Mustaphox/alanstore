@@ -8,11 +8,25 @@ $heroImage = e($hero['fallback_image'] ?? 'https://images.unsplash.com/photo-153
   <!-- Background Media -->
   <div class="hero-lux-bg">
     <?php if ($ytId): ?>
-      <div class="hero-yt-wrap">
-        <iframe src="https://www.youtube.com/embed/<?=$ytId?>?autoplay=1&mute=1&loop=1&controls=0&playlist=<?=$ytId?>&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&disablekb=1"
-          frameborder="0" allow="autoplay; encrypted-media"
-          style="position:absolute;top:50%;left:50%;width:100vw;height:56.25vw;min-height:100%;min-width:177.78vh;transform:translate(-50%,-50%);pointer-events:none;"></iframe>
-      </div>
+      <img src="<?=$heroImage?>" alt="ALAN" class="hero-lux-img" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+      <div class="hero-yt-wrap" id="hero-yt-wrap" data-yt-id="<?=e($ytId)?>" style="position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:1; opacity:0; transition: opacity 1.8s ease;"></div>
+      <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+          var wrap = document.getElementById('hero-yt-wrap');
+          if (wrap && wrap.dataset.ytId) {
+            var ifr = document.createElement('iframe');
+            ifr.src = 'https://www.youtube.com/embed/' + encodeURIComponent(wrap.dataset.ytId) + '?autoplay=1&mute=1&loop=1&controls=0&playlist=' + encodeURIComponent(wrap.dataset.ytId) + '&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&disablekb=1&fs=0&playsinline=1';
+            ifr.frameBorder = '0';
+            ifr.allow = 'autoplay; encrypted-media';
+            ifr.setAttribute('loading', 'lazy');
+            ifr.style.cssText = 'position:absolute;top:50%;left:50%;width:100vw;height:56.25vw;min-height:100%;min-width:177.78vh;transform:translate(-50%,-50%) scale(1.6);pointer-events:none;';
+            ifr.onload = function() { wrap.style.opacity = '1'; };
+            wrap.appendChild(ifr);
+          }
+        }, 800);
+      });
+      </script>
     <?php elseif (!empty($hero['video_enabled']) && !empty($hero['video_url'])): ?>
       <video autoplay muted loop playsinline class="hero-lux-video">
         <source src="<?=e($hero['video_url'])?>">
@@ -99,8 +113,8 @@ $heroImage = e($hero['fallback_image'] ?? 'https://images.unsplash.com/photo-153
   </div>
   <div class="categories">
     <?php foreach($categories as $c): ?>
-    <a class="category" href="<?=base('shop.php?category='.$c['id'])?>">
-      <img loading="lazy" src="<?=e($c['image'])?>" alt="<?=e($c['name'])?>">
+    <a class="category reveal-on-scroll" href="<?=base('shop.php?category='.$c['id'])?>">
+      <img loading="lazy" decoding="async" src="<?=e($c['image'])?>" alt="<?=e($c['name'])?>">
       <span><?=e($c['name'])?> ←</span>
     </a>
     <?php endforeach; ?>
@@ -122,7 +136,7 @@ $heroImage = e($hero['fallback_image'] ?? 'https://images.unsplash.com/photo-153
 </section>
 
 <section class="feature">
-  <img loading="lazy" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80" alt="أناقة ALAN">
+  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80" alt="أناقة ALAN">
   <div class="feature-copy">
     <p class="eyebrow">فلسفة الآن</p>
     <h2>التفاصيل الصغيرة تصنع <em>فرقاً كبيراً.</em></h2>

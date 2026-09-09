@@ -634,7 +634,7 @@ CREATE TABLE `settings` (
 
 LOCK TABLES `settings` WRITE;
 /*!40000 ALTER TABLE `settings` DISABLE KEYS */;
-INSERT INTO `settings` VALUES (1,'store_name','ALAN','2026-08-04 10:09:21'),(2,'seo_description','عبايات فاخرة في الجزائر مع الدفع عند الاستلام','2026-08-04 10:09:21'),(3,'whatsapp','https://wa.me/213550000000','2026-08-04 10:09:21'),(4,'phone','0550 000 000','2026-08-04 10:09:21'),(5,'email','hello@alan-dz.com','2026-08-04 10:09:21');
+INSERT INTO `settings` VALUES (1,'store_name','ALAN','2026-08-04 10:09:21'),(2,'seo_description','عبايات فاخرة في الجزائر مع الدفع عند الاستلام','2026-08-04 10:09:21'),(3,'whatsapp','https://wa.me/213665309431','2026-08-04 10:09:21'),(4,'phone','0665 30 94 31','2026-08-04 10:09:21'),(5,'email','hello@alan-dz.com','2026-08-04 10:09:21');
 /*!40000 ALTER TABLE `settings` ENABLE KEYS */;
 UNLOCK TABLES;
 

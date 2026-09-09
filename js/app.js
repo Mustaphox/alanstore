@@ -29,6 +29,18 @@ document.querySelectorAll('[data-cart]').forEach(function(b) {
         f.append('product_id', b.dataset.cart);
         let qtyEl = document.querySelector('[name=qty]');
         f.append('qty', qtyEl ? qtyEl.value : 1);
+        let sizeEl = document.getElementById('selected-size');
+        if (sizeEl) f.append('size', sizeEl.value);
+        let colorEl = document.getElementById('selected-color');
+        if (colorEl) f.append('color', colorEl.value);
+        let eventId = 'atc_' + Math.random().toString(36).substr(2, 9);
+        f.append('event_id', eventId);
+        if(typeof fbq !== 'undefined') {
+            fbq('track', 'AddToCart', {content_ids: [b.dataset.cart], content_type: 'product'}, {eventID: eventId});
+        }
+        if(typeof ttq !== 'undefined') {
+            ttq.track('AddToCart', {contents: [{content_id: b.dataset.cart, content_type: 'product'}]});
+        }
         let r = await fetch(ALAN.base+'api/orders.php?action=cart',{method:'POST',body:f});
         let j = await r.json();
         if(j.ok) {
@@ -59,3 +71,30 @@ if(wilaya) {
 if(delivery) {
     delivery.addEventListener('change', shipping);
 }
+
+// ========================================================
+// SCROLL REVEAL ANIMATIONS (INTERSECTION OBSERVER)
+// ========================================================
+document.addEventListener('DOMContentLoaded', function() {
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -50px 0px', // Trigger slightly before it comes into full view
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                // Optional: stop observing once revealed if you only want it to animate once
+                // observer.unobserve(entry.target); 
+            } else {
+                // Remove to allow re-animation when scrolling back up (optional, remove for one-time animation)
+                entry.target.classList.remove('is-visible');
+            }
+        });
+    }, observerOptions);
+
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    revealElements.forEach(el => observer.observe(el));
+});
