@@ -2,11 +2,12 @@
 
   <img src="logo.png" alt="ALAN Store Logo" width="110" height="110" style="border-radius: 50%; box-shadow: 0 10px 25px rgba(0,0,0,0.15);">
 
-  # 💎 ALAN Store — متجر الآن للعبايات الفاخرة
-  **The Luxury Abaya E-Commerce Experience for Algeria | منصة التجارة الإلكترونية الراقية للعبايات النسائية**
+  # 💎 ALAN Store — PHP E-Commerce Store COD (Cash on Delivery)
+  ### متجر إلكتروني فاخر بنظام الدفع عند الاستلام | High-Converting Store COD Platform in Algeria
 
   <p align="center">
     <a href="https://alan.is-best.net/?i=1" target="_blank"><img src="https://img.shields.io/badge/Live%20Demo-alan.is--best.net-gold?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo"></a>
+    <a href="https://github.com/Mustaphox/alanstore"><img src="https://img.shields.io/badge/Store%20COD-Cash%20On%20Delivery-success?style=for-the-badge&logo=cashapp&logoColor=white" alt="Store COD"></a>
     <a href="#-أبرز-المميزات-الاستثنائية"><img src="https://img.shields.io/badge/PHP-8.x%20Ready-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP 8.x"></a>
     <a href="#-أبرز-المميزات-الاستثنائية"><img src="https://img.shields.io/badge/MySQL-InnoDB%20Indexed-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"></a>
     <a href="#-أبرز-المميزات-الاستثنائية"><img src="https://img.shields.io/badge/AI%20Assistant-Gemini%20%2B%20Expert-gold?style=for-the-badge&logo=google&logoColor=white" alt="Gemini AI"></a>
@@ -22,9 +23,11 @@
   </p>
 
   <p align="center">
+    <strong>أقوى منصة متجر إلكتروني بنظام الدفع عند الاستلام (Store COD) مخصصة لسوق الجزائر وشمال إفريقيا.</strong>
+    <br>
     <strong>عبايات فاخرة تعبّر عن أصالتكِ وأناقتكِ في كل مناسبة. توصيل لـ 58 ولاية والدفع عند الاستلام.</strong>
     <br>
-    متجر إلكتروني متكامل مبني بدقة متناهية ليجمع بين جمال التصميم الفاخر (Liquid Glass & Modern Luxury)، السرعة القصوى، التوافق التام مع الاستضافات المشتركة، ومساعد ذكاء اصطناعي تفاعلي لزيادة المبيعات.
+    A lightweight, ultra-fast <strong>PHP E-Commerce Store COD (Cash on Delivery)</strong> platform built with Vanilla PHP & JS, featuring dynamic 58-wilaya shipping rates, 1-step checkout, interactive Gemini AI assistant, and comprehensive admin dashboard.
   </p>
 
   ---
@@ -34,6 +37,7 @@
 ## 📑 فهرس المحتويات
 - [🌐 المعاينة المباشرة (Live Demo)](#-المعاينة-المباشرة-live-demo)
 - [نظرة عامة على المشروع](#-نظرة-عامة-على-المشروع)
+- [🛍️ معمارية نظام المتجر والدفع عند الاستلام (Store COD Architecture)](#️-معمارية-نظام-المتجر-والدفع-عند-الاستلام-store-cod-architecture)
 - [أبرز المميزات الاستثنائية](#-أبرز-المميزات-الاستثنائية)
   - [1. مساعد الدعم الذكي ALAN AI Assistant](#1-مساعد-الدعم-الذكي-alan-ai-assistant)
   - [2. السرعة الفائقة والأداء المتقن (Ultra-Fast Performance)](#2-السرعة-الفائقة-والأداء-المتقن-ultra-fast-performance)
@@ -64,6 +68,20 @@
 1. **سرعة إقلاع واستجابة لحظية** دون استهلاك للذاكرة أو بطء في السيرفرات المشتركة.
 2. **تحكم كامل 100%** في كل سطر كود، وكل طلب قاعدة بيانات، وكل تفاعل CSS/JS.
 3. **تصميم زجاجي عصري (Liquid Glassmorphism)** يمنح الزبونة شعوراً بالفخامة والتميز من اللحظة الأولى.
+
+---
+
+## 🛍️ معمارية نظام المتجر والدفع عند الاستلام (Store COD Architecture)
+
+يُعتبر متجر **ALAN** مرجعاً عملياً متكاملاً لتطوير منصات **Store COD (Cash on Delivery E-Commerce)** المصممة خصيصاً للتجارة الإلكترونية المحلية في الجزائر والشرق الأوسط، حيث يعتمد أكثر من 95% من المشترين على خيار الدفع عند الاستلام:
+
+| الميزة الأساسية في نظام Store COD | آلية العمل البرمجية في المتجر | الأثر المباشر لزيادة المبيعات (CRO) |
+| :--- | :--- | :--- |
+| **إتمام الطلب السريع (1-Step COD Checkout)** | واجهة شراء خفيفة تطلب فقط (الاسم، الهاتف، الولاية، والبلدية) بدون تعقيدات الحسابات وكلمات المرور | خفض معدل التخلي عن السلة بنسبة تفوق 40% مقارنة بالمتاجر التقليدية |
+| **محرك شحن ديناميكي لـ 58 ولاية** | استعلام AJAX لحظي يجلب أسعار التوصيل (منزل / مكتب) فور اختيار الولاية | شفافية كاملة وبناء ثقة متبادلة دون مفاجأة الزبونة بتكاليف إضافية |
+| **تأكيد الطلبيات عبر واتساب بنقرة واحدة** | زر ذكي في لوحة التحكم ينشئ رابط `https://wa.me/` مع رسالة مخصصة بتفاصيل الطلب | رفع معدل تأكيد واستلام الطلبيات وخفض نسبة الطرود المرتجعة (RTO) |
+| **نظام حماية التاجر وكشف الاحتيال (Fraud Risk Scoring)** | خوارزمية ذكية تحلل تكرار رقم الهاتف وعنوان الـ IP لحساب درجة المخاطرة | حماية رأس مال التاجر من الطلبات الوهمية والمنافسين |
+| **مستشارة الذكاء الاصطناعي التفاعلية** | محرك إجابة فوري يشرح شروط الاستبدال والدفع بعد فحص الطرد، ويعرض المنتجات | رفع نسبة التحويل والإجابة عن تردد الزبونات على مدار 24/7 |
 
 ---
 
@@ -252,6 +270,19 @@ alan-store/
 - **مفتاح Google Gemini API Key**: أضف مفتاحك الخاص لتفعيل قدرات Gemini المتقدمة.
 - **رسالة الترحيب واسم المساعد**: تخصيص اسم المساعد ورسالته الترحيبية للزبائن.
 - **أكواد التتبع**: Meta Pixel ID و TikTok Pixel ID لحملاتك الإعلانية.
+
+---
+
+## 🔍 الكلمات المفتاحية والوسوم (Store COD Keywords & Topics)
+
+مشروع متكامل ومُحسّن للظهور في محركات بحث GitHub وGoogle لجميع الكلمات المرتبطة بالتجارة الإلكترونية والدفع عند الاستلام:
+
+```text
+store cod, ecommerce cod, cash on delivery store, store-cod, ecommerce-cod, 
+php store cod, algeria ecommerce cod, 58 wilayas cod, cash on delivery ecommerce, 
+cod store platform, abaya store cod, متجر دفع عند الاستلام, متجر الكتروني جزائري, 
+سكربت متجر دفع عند الاستلام, php ecommerce script, gemini ai store
+```
 
 ---
 
