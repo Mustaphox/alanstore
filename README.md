@@ -6,12 +6,19 @@
   **The Luxury Abaya E-Commerce Experience for Algeria | منصة التجارة الإلكترونية الراقية للعبايات النسائية**
 
   <p align="center">
+    <a href="https://alan.is-best.net/?i=1" target="_blank"><img src="https://img.shields.io/badge/Live%20Demo-alan.is--best.net-gold?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo"></a>
     <a href="#-أبرز-المميزات-الاستثنائية"><img src="https://img.shields.io/badge/PHP-8.x%20Ready-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP 8.x"></a>
     <a href="#-أبرز-المميزات-الاستثنائية"><img src="https://img.shields.io/badge/MySQL-InnoDB%20Indexed-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"></a>
     <a href="#-أبرز-المميزات-الاستثنائية"><img src="https://img.shields.io/badge/AI%20Assistant-Gemini%20%2B%20Expert-gold?style=for-the-badge&logo=google&logoColor=white" alt="Gemini AI"></a>
     <a href="#-أبرز-المميزات-الاستثنائية"><img src="https://img.shields.io/badge/Delivery-58%20Wilayas%20COD-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="58 Wilayas"></a>
     <a href="#-أبرز-المميزات-الاستثنائية"><img src="https://img.shields.io/badge/Performance-Ultra%20Fast%20⚡-ff69b4?style=for-the-badge" alt="Performance"></a>
     <a href="#-أبرز-المميزات-الاستثنائية"><img src="https://img.shields.io/badge/Mobile-100%25%20Responsive-blueviolet?style=for-the-badge" alt="Mobile Responsive"></a>
+  </p>
+
+  <p align="center">
+    <a href="https://alan.is-best.net/?i=1" target="_blank">
+      <img src="https://img.shields.io/badge/🌐_المعاينة_المباشرة_(Live_Demo)-اضغط_هنا_لزيارة_الموقع-2ea44f?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo Button">
+    </a>
   </p>
 
   <p align="center">
@@ -25,6 +32,7 @@
 </div>
 
 ## 📑 فهرس المحتويات
+- [🌐 المعاينة المباشرة (Live Demo)](#-المعاينة-المباشرة-live-demo)
 - [نظرة عامة على المشروع](#-نظرة-عامة-على-المشروع)
 - [أبرز المميزات الاستثنائية](#-أبرز-المميزات-الاستثنائية)
   - [1. مساعد الدعم الذكي ALAN AI Assistant](#1-مساعد-الدعم-الذكي-alan-ai-assistant)
@@ -39,6 +47,14 @@
 - [النشر على الاستضافات السحابية والمشتركة (Production Deployment)](#-النشر-على-الاستضافات-السحابية-والمشتركة-production-deployment)
 - [إعدادات المتجر والتخصيص (Configuration)](#-إعدادات-المتجر-والتخصيص-configuration)
 - [المطور والحقوق (Credits & Author)](#-المطور-والحقوق-credits--author)
+
+---
+
+## 🌐 المعاينة المباشرة (Live Demo)
+
+يمكنك استكشاف المتجر وتجربة سرعته الفائقة، تصميمه المتجاوب مع الهواتف، ومساعد الذكاء الاصطناعي التفاعلي مباشرة عبر الرابط التالي:
+
+> 🔗 **رابط المتجر الحي**: [https://alan.is-best.net/?i=1](https://alan.is-best.net/?i=1)
 
 ---
 
@@ -247,9 +263,11 @@ alan-store/
   
   ### **Mustox Dev**
   
+  [![Live Demo](https://img.shields.io/badge/Live%20Demo-alan.is--best.net-gold?style=for-the-badge&logo=googlechrome&logoColor=white)](https://alan.is-best.net/?i=1)
   [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/213665309431)
   [![GitHub](https://img.shields.io/badge/GitHub-Mustaphox-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mustaphox)
 
+  **المعاينة الحية للمتجر**: [https://alan.is-best.net/?i=1](https://alan.is-best.net/?i=1)  
   **رقم الهاتف / واتساب**: `+213 665 30 94 31`
   
   © 2026 **ALAN Store** — جميع الحقوق محفوظة ومحمية بموجب حقوق الملكية الفكرية.
